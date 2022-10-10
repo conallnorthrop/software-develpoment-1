@@ -1,0 +1,119 @@
+import uulib.Console;
+
+public class Main {
+
+    // ============= question 1 ===============
+    public static String getCoinValue(int coin) {
+        // replace return statement below with your solution
+        String CurrentValue = "invalid " + coin;
+        if (coin == 1) {
+          CurrentValue = "one penny"; 
+        } else if (coin == 2) {
+          CurrentValue = "two pence";
+        }else if (coin == 5) {
+          CurrentValue = "five pence";
+        } else if (coin == 10) {
+          CurrentValue = "ten pence"; 
+        } else if (coin == 20) {
+          CurrentValue = "twenty pence";
+        } else if (coin == 50) {
+          CurrentValue = "fifty pence";
+        } else if (coin == 100) {
+          CurrentValue = "one pound";
+        } else if (coin == 200) {
+          CurrentValue = "two pounds";
+        } 
+        return CurrentValue;    
+    }
+
+   
+    public static void question1() {
+        // complete question 1 sentinel loop here and then call in main method to execute this question
+
+        final int SENTINEL = 0;
+        int coin = Console.getInt("coin (0 to quit): ");
+        while (coin != SENTINEL) {
+          System.out.println(getCoinValue(coin));
+          coin = Console.getInt ("coin (0 to quit): ");
+        }
+
+    }
+
+    // ============= question 2 ===============
+
+    // part a.
+    public static void drawLine(int length, char c) {
+        // add your solution
+        for (int A = 0; A < length; A = A + 1) {
+          System.out.print(c);
+        }
+        
+    }
+
+    // part b.
+    public static void drawTriangle(int height) {
+        // add your solution
+        int star = 1, spaces = height - 1; 
+        for (int A = 0; A < height; A = A + 1){
+          drawLine(spaces, ' ');
+          drawLine(spaces, '*');
+          drawLine(spaces, ' ');
+          System.out.print("\n");
+          star = star + 2;
+          spaces = spaces - 1;
+
+        }
+    
+    }
+
+
+    // part d. return string of specified length using character c
+    public static String makeLine(int length, char c) {
+        // replace return statement below with your solution
+        String line = "";
+        for (int A = 0; A < length; A = A + 1) {
+          line = line + c;
+        }
+        return line;
+    }
+
+    // part d. return string of equilateral triangle of specified height
+    public static String makeTriangle(int height) {
+        // replace return statement below with your solution
+        int star = 1, spaces = height - 1;
+        String triangle = ""; 
+        for (int A = 0; A < height; A = A + 1) {
+          triangle += makeLine(spaces, ' ');
+          triangle += makeLine(star, '*');
+          triangle += makeLine(spaces, ' ')+ "\n";
+          star = star + 2;
+          spaces = spaces - 1;
+        }
+        return triangle;
+    }
+
+    // part c.
+    public static void question2() {
+        // complete question 2 sentinel loop here and then call in main method to execute 
+        // this question. 
+        final int SENTINEL = 0;
+        int inputHeight = Console.getInt ("Height of triangle?: ");
+        while (inputHeight != 0) {
+          System.out.println(makeTriangle(inputHeight));
+          inputHeight = Console.getInt("Height of the triangle?: ");
+        }
+    }
+
+    // main method - program execution starts here
+    public static void main(String[] args) {
+    
+        //question1();
+        question2();
+
+        // optional question contained in the BMI class
+        //BMI.question3_optional();
+    }
+
+
+    
+}
