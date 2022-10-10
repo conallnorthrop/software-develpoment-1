@@ -1,0 +1,93 @@
+import uulib.Console;
+
+public class Main {
+  // Compute the area and perimeter of a rectangle
+
+    public static void question1() {
+        // complete question here
+        int length = Console.getInt("Enter length");
+        int breadth = Console.getInt("Enter Breadth");
+
+        // do the calculations 
+        int perimeter = 2 * (breadth + length);
+        int area = length * breadth;
+
+        // output the answer to the Console
+        System.out.println("Area:" + area + "\n" + "Perimeter: " + perimeter);
+        
+      } 
+
+    
+
+    public static void question2() {
+        // complete question here
+      String name = Console.getString("Enter name ");
+      
+      System.out.println("Hello " + name + ", nice to meet you!");
+
+
+    }
+
+    public static void question3() {
+        // complete question here
+      
+      double price = Console.getDouble("Enter price £");
+
+      double vat;
+      vat = price * 0.2;
+
+      double total;
+      total = vat + price;
+
+      System.out.println( String.format("Vat £" + "%.2f",vat));
+      System.out.println( String.format("Total £" + "%.2f",total));
+
+    }
+
+    public static void question4() {
+        // complete question here
+
+      int twopound = Console.getInt("Enter how many £2 coins you have: ");
+      int onepound = Console.getInt("Enter how many £1 coins you have: ");
+      int fiftypence = Console.getInt("Enter how many 50p coins you have: ");
+      int twentypence = Console.getInt("Enter how many 20p coins you have: ");
+      int tenpence = Console.getInt("Enter how many 10p coins you have ");
+      int fivepence = Console.getInt("Enter how many 5p coins you have: ");
+      int twopence = Console.getInt("Enter how many 2p coins you have: ");
+      int onepence = Console.getInt("Enter how many 1p coins you have: ");
+
+      //complete total calculations
+      twopound = twopound * 200;
+      onepound = onepound * 100;
+      fiftypence = fiftypence * 50;
+      twentypence = twentypence * 20;
+      tenpence = tenpence * 10;
+      fivepence = fivepence * 5;
+      twopence = twopence * 2;
+      onepence = onepence * 1;
+
+
+
+      double total;
+      total = (twopound + onepound + fiftypence + twentypence + tenpence + fivepence + twopence + onepence) /100.0;
+
+      System.out.println( String.format("Total £" + "%.2f",total));
+
+
+    }
+
+    public static void question5() {
+        // complete optional question here
+    }
+
+    public static void main(String[] args) {
+        // uncomment the sub-program (method)that you wish to exectute
+        
+        //question1();
+        //question2();
+        //question3();
+        question4();
+        //question5();
+        
+    }
+}
