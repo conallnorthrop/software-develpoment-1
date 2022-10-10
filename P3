@@ -1,0 +1,99 @@
+public class Main {
+
+    public static void question1() {
+      double height;
+      height = 1.86;
+      System.out.println("Height is " + height);
+
+      int age;
+      age = 21;
+      System.out.println("My age is " + age);
+
+      char key;
+      key = 'C';
+      System.out.println("First initial letter of your forename is the letter " + key);
+      
+      boolean Pets;
+      Pets = true;
+      System.out.println("Are you a pet owner? " + Pets);
+
+    }
+
+    public static void question2() {
+      double price;
+      price = 67.0;
+
+      double vat;
+      vat = price * 0.2;
+
+      double total;
+      total = vat + price;
+
+      System.out.println("Price £" + price);
+      System.out.println("VAT £" + vat);
+      System.out.println("Total £" + total);
+
+
+    }
+    
+   public static void question3() {
+      double radius;
+      radius = 4;
+
+      double circumference;
+      circumference = 3.14 * radius * 2;
+
+      double area;
+      area = 3.14 * (radius*radius);
+
+      System.out.println("Radius = " +radius);
+      System.out.println("Circumference = " + circumference);
+      System.out.println("Area = " + area);
+
+
+
+    }
+    
+    public static void question4() {
+
+        double celsius;
+        celsius = 20;
+
+        double fahrenheit;
+        fahrenheit = (9.0/5.0) * celsius + 32;
+
+        System.out.println("Farenheit " + fahrenheit);
+
+    }
+
+    public static void question5() {
+
+      int tempA = 7;
+      int tempB = 9;
+      int tempC = 13;
+
+      a = tempC;
+      b = tempA;
+      c = tempB;
+
+      System.out.println("Before swap:");
+      System.out.println("");
+      System.out.println("");
+      System.out.println("");
+      a = tempC;
+      b = tempA;
+      c = tempB;
+    
+
+    }
+    
+    public static void main(String[] args) {
+    
+        question1();
+        //question2();
+        //question3();
+        //question4();
+        //question5();
+
+    }
+}
