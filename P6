@@ -1,0 +1,103 @@
+import uulib.Console;
+
+public class Main {
+
+    public static void question1() {
+        // complete question here
+
+      final int sentinal = -99;
+
+      final double CONVFACTOR = 9.0 / 5.0;  //conversion factor
+
+      // input celcius
+      int celsius = Console.getInt("Temperature in Celsius: ");
+
+      //print results 
+        while (sentinal != celsius){
+          double fahrenheit = CONVFACTOR * celsius + 32;
+        System.out.println(celsius + "C is " +
+        String.format ("%.1f",fahrenheit) + "F");
+        celsius = Console.getInt("Temperature in Celsius: ");
+        }
+        
+        System.out.println("End program");
+
+
+    }
+
+    public static void question2() {
+        // complete question here
+      
+      int counter = 1;
+
+      final int time = 12;
+
+      int num = Console.getInt ("Enter number");
+
+      int result = num * 5;
+
+      while (counter <= time) {
+      result = num * counter;
+      System.out.print (num + time + counter + " = "); 
+      System.out.println(String.format("%2d", result));
+
+      counter = counter + 1; 
+      }
+
+    }
+
+    public static void question2_option() {
+        // complete optional question here
+
+    }
+
+    //public static void question3() {
+    //  this question should be submitted to separate Practical6-q3 repl as your weekly assessment
+    //}
+
+    public static void question3() {
+      final int SENTINAL = 0;
+
+    int number1 = Console.getInt ("num1: ");
+    char operator = Console.getChar("op: ");
+    int number2 = Console.getInt("num2: ");
+    int answer = 0;
+
+    if (operator == '*') {
+      answer = number1 * number2;
+    } else if (operator == '/') {
+      answer = number1 / number2;
+    } else if (operator == '+') {
+      answer = number1 + number2;
+    } else if (operator == '-') {
+      answer = number1 - number2; 
+    } 
+    System.out.println("= " + answer);
+    
+  }
+
+
+
+    public static void question4() {
+        // complete question here
+        
+    } 
+
+
+    public static void question4_option() {
+        // complete optional question here
+    }
+
+    public static void main(String[] args) {
+        // uncomment the sub-program (method)that you wish to exectute
+        
+        //question1();
+     
+        //question2();
+        //question2_option();
+        question3();
+        //question4();
+        //question4_option();
+        
+    }
+}
