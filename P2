@@ -1,0 +1,74 @@
+public class Question1 {
+  
+    public static void main(String[] args){	 
+  	  System.out.print("Ulster University - ");
+      System.out.println("Magee Campus"); 
+    }
+}
+
+public class Question2 {
+
+ public static void main(String[] args) {
+      // add missing print statements
+
+      System.out.println("+----+");
+      System.out.println("|    |");
+      System.out.println("|    |");
+      System.out.println("+----+");
+
+  }
+}
+
+public class Question3 {
+
+    public static void square() {
+      // print statements here to draw square
+      System.out.println("+----+");
+      System.out.println("|    |");
+      System.out.println("|    |");
+      System.out.println("+----+");
+
+    }
+
+    public static void line() {
+      System.out.println("======");
+    } 
+    
+    public static void main(String[] args) {
+  
+      line();
+      square();
+      line();
+      square();
+      line();
+
+    }
+
+}
+
+
+public class Question4 {
+
+    public static void square() {
+        System.out.println("+---+");
+        System.out.println("|   |");
+        System.out.println("+---+");
+    }
+
+    public static void line() {
+        System.out.println("=====");
+    }
+
+    public static void triangle() {
+        System.out.println("  +  ");
+        System.out.println(" + + ");
+        System.out.println("+---+");
+    }
+
+    public static void main(String[] args) {
+        square();
+        triangle();
+        line();
+    }
+
+}
