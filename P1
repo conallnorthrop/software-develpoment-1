@@ -1,0 +1,15 @@
+
+public class Main {
+
+  // Main method - execution starts here
+  public static void main(String[] arges) {
+
+    // print the message to the console 
+    System.out.println("My name is Conall Northrop");
+    System.out.println("I am currently studying Information Technologies in Ulser University");
+    System.out.println("I am 21 years old");
+    System.out.println("I am from Drumaness which is 3 mile away from Ballynahinch");
+        
+  }
+
+}
