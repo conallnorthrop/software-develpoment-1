@@ -1,0 +1,71 @@
+import uulib.Console;
+
+public class Main {
+
+    public static void question1() {
+        // complete question here
+      int number= Console.getInt("Enter number to check: ");
+
+      if (number % 3 == 0)
+        System.out.print(number + " is a multiple of 3");
+      else 
+        System.out.println(number + " is not a multiple of 3");
+
+      int multiple = Console.getInt("Enter number to check: ");
+    }
+
+    public static void question2() {
+        // complete question here
+
+      double price= Console.getDouble("Enter price £");
+      double tender= Console.getDouble("Enter tender £");
+
+      double change;
+      change = tender - price;
+
+      if (price > tender)
+        System.out.print("Insufficant amount tendered");
+      else 
+        System.out.println( String.format("Change £" + "%.2f",change));
+
+    }
+
+
+    //public static void question3() {
+    // submit solution to separate project titled Practical5-q3
+    //}
+
+    public static void question4() {
+        // complete question here
+        
+        int year = Console.getInt("Enter a year: ");
+
+        if 
+        (year % 100 == 0)
+        System.out.println(year + " is a century" );
+        else if (year % 4 == 0)
+        System.out.println(year + " is a leap year" );
+        else
+        System.out.println(year + " It is NOT a leap year");
+
+
+
+    } 
+
+
+    public static void question5() {
+        // complete optional question here
+    
+    }
+
+    // program execution starts here
+    public static void main(String[] args) {
+        // uncomment the sub-program (method)that you wish to exectute
+        
+        //question1();
+        //question2();
+        question4();
+        //question5();
+        
+    }
+}
